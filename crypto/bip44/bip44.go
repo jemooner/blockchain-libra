@@ -1,13 +1,13 @@
 package bip44
 
+import (
+	"blockchain-libra/crypto/bip32"
+	"blockchain-libra/crypto/bip39"
+)
+
 // Copyright 2016 Factom Foundation
 // Use of this source code is governed by the MIT
 // license that can be found in the LICENSE file.
-
-import (
-	"eth-wallet/pkg/crypto/bip32"
-	"eth-wallet/pkg/crypto/bip39"
-)
 
 const (
 	Purpose   uint32 = 0x8000002C

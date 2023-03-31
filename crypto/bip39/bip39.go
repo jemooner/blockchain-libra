@@ -2,12 +2,12 @@
 package bip39
 
 import (
+	"blockchain-libra/crypto/bip39/wordlists"
 	"crypto/rand"
 	"crypto/sha256"
 	"crypto/sha512"
 	"encoding/binary"
 	"errors"
-	"eth-wallet/pkg/crypto/bip39/wordlists"
 	"fmt"
 	"math/big"
 	"strings"

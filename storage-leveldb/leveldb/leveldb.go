@@ -1,7 +1,7 @@
 package leveldb
 
 import (
-	"eth-wallet/pkg/storage-leveldb/types"
+	"blockchain-libra/storage-leveldb/types"
 	"sync"
 
 	"github.com/syndtr/goleveldb/leveldb"

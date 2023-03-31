@@ -3,7 +3,7 @@
 package intpool
 
 import (
-	"eth-wallet/pkg/util/stack"
+	"blockchain-libra/util/stack"
 	"math/big"
 )
 
