@@ -1,8 +1,9 @@
 package bip39
 
 import (
+	"blockchain-libra/crypto/bip32"
 	"encoding/hex"
-	"eth-wallet/pkg/crypto/bip32"
+
 	"testing"
 )
 

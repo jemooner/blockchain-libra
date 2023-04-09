@@ -2,6 +2,8 @@
 package sm2
 
 import (
+	"blockchain-libra/crypto/sha3"
+	"blockchain-libra/crypto/sm3"
 	"bytes"
 	"crypto"
 	"crypto/dsa"
@@ -17,8 +19,7 @@ import (
 	"encoding/asn1"
 	"encoding/pem"
 	"errors"
-	"eth-wallet/pkg/crypto/sha3"
-	"eth-wallet/pkg/crypto/sm3"
+
 	"fmt"
 	"hash"
 	"io"

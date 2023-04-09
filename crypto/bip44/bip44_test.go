@@ -1,9 +1,9 @@
 package bip44
 
 import (
+	"blockchain-libra/crypto/bip32"
+	"blockchain-libra/crypto/bip39"
 	"encoding/json"
-	"eth-wallet/pkg/crypto/bip32"
-	"eth-wallet/pkg/crypto/bip39"
 	"testing"
 )
 

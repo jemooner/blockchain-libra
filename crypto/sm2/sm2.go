@@ -2,6 +2,7 @@ package sm2
 
 // 参考 ecdsa
 import (
+	"blockchain-libra/crypto/sm3"
 	"bytes"
 	"crypto"
 	"crypto/aes"
@@ -12,7 +13,6 @@ import (
 	"encoding/asn1"
 	"encoding/binary"
 	"errors"
-	"eth-wallet/pkg/crypto/sm3"
 	"io"
 	"math/big"
 	"strconv"

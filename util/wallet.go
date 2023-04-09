@@ -1,11 +1,11 @@
 package util
 
 import (
+	"blockchain-libra/crypto/bip39"
+	"blockchain-libra/crypto/ecdsa"
 	"crypto/hmac"
 	"crypto/rand"
 	"crypto/sha512"
-	"eth-wallet/pkg/crypto/bip39"
-	"eth-wallet/pkg/crypto/ecdsa"
 
 	"golang.org/x/crypto/pbkdf2"
 )
