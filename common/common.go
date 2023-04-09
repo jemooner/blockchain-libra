@@ -3,6 +3,7 @@ package common
 import (
 	"crypto/rand"
 	"encoding/hex"
+	"errors"
 	"fmt"
 	"io"
 	"math/big"
@@ -86,4 +87,15 @@ func FillZero256(s string) string {
 		s = "0" + s
 	}
 	return s
+}
+func HexToAmount(hex string) (number string, err error) {
+	hex = hex[2:]
+	if len(hex) != 64 {
+		return "", errors.New("length not equal 64")
+	}
+	valueByte := hex[:64]
+	if err != nil {
+		return "", errors.New("HexToInt64 value err")
+	}
+	return valueByte, nil
 }
