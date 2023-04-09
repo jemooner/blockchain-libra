@@ -99,3 +99,25 @@ func HexToAmount(hex string) (number string, err error) {
 	}
 	return valueByte, nil
 }
+
+func HexToString(hex string) (number string, err error) {
+	hex = hex[2:]
+	if len(hex) != 192 {
+		return "", errors.New("length not equal 192")
+	}
+	allSizeByte := hex[:64]
+	_, err = HexToInt64(allSizeByte)
+	if err != nil {
+		return "", errors.New("HexToInt64 allSize err")
+	}
+	sizeByte := hex[64:128]
+	size, err := HexToInt64(sizeByte)
+	if err != nil {
+		return "", errors.New("HexToInt64 size err")
+	}
+	valueByte := hex[128:192]
+	if err != nil {
+		return "", errors.New("HexToInt64 value err")
+	}
+	return valueByte[:size*2], nil
+}
